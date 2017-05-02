@@ -19,7 +19,7 @@ class Crime: NSObject {
         self.dateCreated = NSDate()
         
         super.init()
-    }
+    } 
     
     convenience init(random: Bool = false) {
         if random {
