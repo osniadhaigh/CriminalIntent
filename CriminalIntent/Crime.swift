@@ -10,10 +10,10 @@ import UIKit
 
 class Crime: NSObject {
     var title: String
-    var serialNumber: String?
+    var serialNumber: String
     let dateCreated: NSDate
     
-    init(title: String, serialNumber: String?) {
+    init(title: String, serialNumber: String) {
         self.title = title
         self.serialNumber = serialNumber
         self.dateCreated = NSDate()
@@ -40,7 +40,7 @@ class Crime: NSObject {
             
             self.init(title: randomTitle, serialNumber: randomSerialNumber)
         } else {
-            self.init(title: "", serialNumber: nil)
+            self.init(title: "", serialNumber: "")
         }
     }
     

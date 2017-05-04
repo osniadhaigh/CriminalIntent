@@ -21,7 +21,7 @@ class ItemsViewController: UITableViewController {
         let crime = itemStore.allItems[indexPath.row]
         
         cell.textLabel?.text = crime.title
-        cell.detailTextLabel?.text = "$\(crime.serialNumber)"
+        cell.detailTextLabel?.text = "\(crime.serialNumber)"
         
         return cell
     }
